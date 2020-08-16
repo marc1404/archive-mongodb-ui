@@ -1,0 +1,18 @@
+<ol class="breadcrumb">
+	<li class="active">Databases</li>
+</ol>
+
+<h2>Databases</h2>
+
+<table class="table table-hover">
+	<tr>
+		<th>Database</th>
+		<th>Collections</th>
+		<th>Documents</th>
+	</tr>
+	<tr ng-repeat="database in databases">
+		<td><a href="#/database/{{database.name}}/collections">{{database.name}}</a></td>
+		<td>{{database.collections}}</td>
+		<td>{{database.documents}}</td>
+	</tr>
+</table>
